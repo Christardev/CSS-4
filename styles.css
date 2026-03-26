@@ -139,11 +139,11 @@ button {
 .content {
   margin-left: 120px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 0;
 }
 .job {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   background-color: brown;
   width: fit-content;
@@ -195,4 +195,29 @@ button {
   border: none;
   background-color: #18191a;
   border: 2px solid white;
+}
+.notes_container {
+  padding-top: 10px;
+  display: flex;
+  gap: 50px;
+}
+.notes_1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.notes_2 {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.plus_sign {
+  color: #265370;
+}
+.footer {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  padding-right: 400px;
+}
+.hogi {
+  font-size: 0.8rem;
 }
