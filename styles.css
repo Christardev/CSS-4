@@ -18,6 +18,7 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
+  z-index: 3;
 }
 ul {
   display: flex;
