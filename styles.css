@@ -99,6 +99,10 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   /* phone 480px */
+  nav img,
+  nav button {
+    display: none;
+  }
   body {
     font-size: 0.95rem;
   }
@@ -142,8 +146,7 @@ button:hover {
   button,
   .btn {
     display: block;
-    width: 90%;
-    margin: 12px auto;
+    width: fit-content;
     padding: 10px 12px;
   }
   .content {
@@ -158,6 +161,7 @@ button:hover {
     margin: 0 auto;
     display: block;
   }
+
   .stack {
     width: 100%;
     padding: 18px;
@@ -317,17 +321,33 @@ main {
 }
 
 @media screen and (max-width: 950px) {
+  nav img,
+  nav button {
+    display: none;
+  }
   main {
     flex-direction: column;
     margin-left: 30px;
     gap: 0;
+    .stack {
+      position: relative;
+      bottom: 0;
+      left: -20px;
+      margin-left: 0;
+      width: 100%;
+    }
   }
 
   .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
     width: 100%;
     /* height: 100%; */
     margin: 20vh 0;
-
+    padding-top: 0;
     .profile_img {
       right: 10%;
     }
@@ -345,9 +365,11 @@ main {
     flex-direction: row;
   }
   .profile_img {
+    z-index: -1;
+    opacity: 0.3;
   }
   .hogi {
-    left: 150px;
+    /* left: 150px; */
     bottom: -80px;
     font-size: 0.8rem;
     color: #3c2f3d;
