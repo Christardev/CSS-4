@@ -36,7 +36,7 @@ a {
 }
 a:hover {
   color: #2eac6d;
-  background-color: rgba(46, 172, 109, 0.1);
+  /* background-color: rgba(46, 172, 109, 0.1); */
   border-bottom: 2px solid #2eac6d;
 }
 
