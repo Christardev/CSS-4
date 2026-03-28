@@ -141,7 +141,7 @@ button:hover {
   }
   li a:hover,
   li:hover a {
-    color: #ffffff;
+    color: #f0f0f0;
     background-color: #2eac6d;
     border-radius: 6px;
   }
