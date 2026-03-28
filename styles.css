@@ -6,6 +6,8 @@
 body {
   height: 100vh;
   background-color: #f0f0f0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 img {
   width: 40px;
@@ -327,14 +329,25 @@ main {
   }
   main {
     flex-direction: column;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     gap: 0;
     .stack {
       position: relative;
       bottom: 0;
-      left: -20px;
+      /* left: -20px; */
       margin-left: 0;
       width: 100%;
+    }
+    h1,
+    .job,
+    .paragraph_filler,
+    .btn,
+    .notes_container {
+      margin-left: 30px;
+    }
+
+    .paragraph_filler {
+      width: 300px;
     }
   }
 
@@ -349,7 +362,7 @@ main {
     margin: 20vh 0;
     padding-top: 0;
     .profile_img {
-      right: 10%;
+      right: 0;
     }
   }
 
@@ -366,13 +379,14 @@ main {
   }
   .profile_img {
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.2;
   }
   .hogi {
     /* left: 150px; */
-    bottom: -80px;
+    bottom: -100px;
     font-size: 0.8rem;
     color: #3c2f3d;
+    left: 25%;
   }
   nav {
     align-items: center;
