@@ -8,6 +8,7 @@ body {
   background-color: #f0f0f0;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  /* grid-template-columns: auto 1fr auto; */
 }
 img {
   width: 40px;
@@ -67,6 +68,10 @@ button:hover {
 
 @media screen and (max-width: 1024px) {
   /* laptop 1024px */
+  .content,
+  .stack {
+    flex-grow: 1;
+  }
   nav {
     flex-wrap: wrap;
     gap: 12px;
@@ -83,6 +88,10 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   /* tablet 768px */
+  .content,
+  .stack {
+    flex-grow: 1;
+  }
   img {
     width: 36px;
   }
@@ -101,6 +110,10 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   /* phone 480px */
+  .content,
+  .stack {
+    flex-grow: 1;
+  }
   nav img,
   nav button {
     display: none;
@@ -390,5 +403,12 @@ main {
   }
   nav {
     align-items: center;
+  }
+  html {
+    height: fit-content;
+  }
+  .content,
+  .stack {
+    flex-grow: 1;
   }
 }
